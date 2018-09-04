@@ -9,8 +9,6 @@ var katzDeliLine = [];
  
 
 function nowServing(katzDeliLine){
-  // let person = katzDeliLine.shift()
-  // console.log("test", person)
    if (katzDeliLine.length < 1){
      return "There is nobody waiting to be served!"
      }
@@ -23,11 +21,12 @@ function currentLine(x) {
     var line = []
     if (x.length === 0) {
       return "The line is currently empty."
-    } else {
+    } 
+    else {
       for(var i = 0; i < x.length; i++) {
         line += (i + 1) + ". " + x[i] + ", "
       }
       line = line.slice(0, line.length-2)
-      return "The line is currently: " + line
+     return "The line is currently: " + line
     }
 }
